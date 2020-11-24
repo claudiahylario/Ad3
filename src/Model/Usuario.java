@@ -128,7 +128,7 @@ public class Usuario {
         return UsuarioDAO.maiorID();
     }
 
-    //login
+    //login do Usuário
     public boolean login(String email, String senha) {
         for (int i = 0; i < UsuarioDAO.listaUsuario.size(); i++) {
             if (UsuarioDAO.listaUsuario.get(i).email.equals(email) && UsuarioDAO.listaUsuario.get(i).senha.equals(senha)) {
